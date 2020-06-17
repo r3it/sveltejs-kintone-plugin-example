@@ -1,0 +1,45 @@
+{
+  "manifest_version": 1,
+  "version": 1,
+  "type": "APP",
+  "name": {
+    "ja": "図書館蔵書検索プラグイン",
+    "en": "Library Book Search Plug-in",
+    "zh": "Library Book Search Plug-in"
+  },
+  "description": {
+    "ja": "カーリル（https://calil.jp/）のAPIを使って図書館の蔵書検索をするプラグインです",
+    "en": "This is a plugin to search the library's collection",
+    "zh": "This is a plugin to search the library's collection"
+  },
+  "icon": "images/iconfinder_booklet_1055108.png",
+  "homepage_url": {
+    "ja": "https://www.r3it.com/",
+    "en": "https://www.r3it.com/",
+    "zh": "https://www.r3it.com/"
+  },
+  "config": {
+    "html": "config.html",
+    "js": [
+      "build/config.js"
+    ],
+    "css": [
+      "global.css",
+      "build/config.css"
+    ],
+    "required_params": [
+      "appKey",
+      "pref",
+      "systemIDList"
+    ]
+  },
+  "desktop": {
+    "js": [
+      "build/customize.js"
+    ],
+    "css": [
+      "global.css",
+      "build/customize.css"
+    ]
+  }
+}

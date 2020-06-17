@@ -1,0 +1,34 @@
+{
+  "name": "kintone-bookshare-app",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "rollup -c",
+    "dev": "rollup -c -w",
+    "start": "sirv public",
+    "pack": "rollup -c --environment BUILD:dev && ./node_modules/.bin/kintone-plugin-packer --ppk ./conf/dev/yourKeyfile.ppk --out ./build/dev-plugin.zip ./build/dev",
+    "uploader": "./node_modules/.bin/kintone-plugin-uploader --domain $KINTONE_DOMAIN --username $KINTONE_USERNAME --password $KINTONE_PASSWORD ./build/dev-plugin.zip",
+    "deploy": "run-s pack uploader"
+  },
+  "devDependencies": {
+    "@kintone/plugin-packer": "^3.0.2",
+    "@kintone/plugin-uploader": "^4.0.4",
+    "@rollup/plugin-commonjs": "^12.0.0",
+    "@rollup/plugin-node-resolve": "^8.0.0",
+    "node-sass": "^4.13.1",
+    "npm-run-all": "^4.1.5",
+    "rollup": "^2.3.4",
+    "rollup-plugin-cleaner": "^1.0.0",
+    "rollup-plugin-copy": "^3.3.0",
+    "rollup-plugin-livereload": "^1.0.0",
+    "rollup-plugin-postcss": "^2.0.5",
+    "rollup-plugin-svelte": "^5.0.3",
+    "rollup-plugin-terser": "^5.1.2",
+    "svelte": "^3.0.0",
+    "sirv-cli": "^0.4.4",
+    "svelte-material-ui": "^1.0.0-beta.21"
+  },
+  "dependencies": {},
+  "engines": {
+    "node": ">=12"
+  }
+}
