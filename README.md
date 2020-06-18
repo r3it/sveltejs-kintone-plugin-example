@@ -6,7 +6,7 @@ SvelteJSを使ったkintoneカスタマイズ向けのテンプレートとし�
 
 解説記事はこちらに掲載しています。
 
-https://www.r3it.com/blog
+[https://www.r3it.com/blog/kintone-customize-with-sveltejs](https://www.r3it.com/blog/kintone-customize-with-sveltejs)
 
 
 ## Requirement
